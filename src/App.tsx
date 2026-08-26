@@ -6,6 +6,7 @@ import SideBar from "./component/SideBar";
 
 
 
+
 const App = () => {
 
   
@@ -14,7 +15,7 @@ const App = () => {
     <div>
       <FilterContextProvider>
         <BrowserRouter>
-        <div className="flex h-screen">
+        <div className="flex h-screen ">
             <SideBar />
             
             
@@ -22,6 +23,7 @@ const App = () => {
               <Routes>
                   <Route path="/" element={<MainContainer/>}/>
               </Routes>
+             
             </div>
         </div>
         </BrowserRouter>

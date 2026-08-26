@@ -33,7 +33,7 @@ const SideBar = () => {
                 const data : FetchCategoryModel = responce.data;
                 // console.log(data);
              const uniqueCategories = Array.from(new Set(data.products.map(product => product.category) ) )
-             console.log(uniqueCategories)
+            //  console.log(uniqueCategories)
              setCategories(uniqueCategories);
                 
             } catch (error) {
@@ -50,7 +50,7 @@ const SideBar = () => {
     const handelMinPrice =(e: ChangeEvent<HTMLInputElement>)=> {
             const min = e.target.value;
             setMinPrice(min ? parseFloat(min) : undefined);
-            console.log(parseFloat(min));
+            // console.log(parseFloat(min));
     }
     const handelMaxPrice =(e: ChangeEvent<HTMLInputElement>)=> {
             const max = e.target.value;
@@ -67,7 +67,7 @@ const SideBar = () => {
     // handelling keywords
     const handelKeywords =(keyword:string)=>{
         setKeyword(keyword);
-        console.log(keyword);
+        // console.log(keyword);
     }
 
     // hadel Reset button
@@ -81,7 +81,7 @@ const SideBar = () => {
 
 
   return (
-    
+
     <div className="w-64 h-screen  bg-gray-300 p-5 font-meri">
         <h1 className="text-3xl font-bold text-red ">React Store</h1>
        {/* search and set Min and Max */}
