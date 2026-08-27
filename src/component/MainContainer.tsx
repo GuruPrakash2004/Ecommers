@@ -88,7 +88,7 @@ const MainContainer = () => {
         if(page > 0 && page <= totalPage)
         setCurrentPage(page);
    }
-const totalProducts = 100;
+const totalProducts = 200;
 const totalPage = Math.ceil( totalProducts / itemsPerPage);
 
    const pagination =() =>{
@@ -121,7 +121,7 @@ const totalPage = Math.ceil( totalProducts / itemsPerPage);
         
         <div className="mb-5">
             <div className="flex flex-col sm:flex-row justify-between items-center">
-                    <div className="relative mb-5 mt-5">
+                    <div className="relative my-2">
                         <button className="border px-4 py-2 rounded-full flex items-center " onClick={()=> setDropDown(!dropDown)}>
                             <Tally3 className="mr-2"/>
                             {filter === "all" ? "Fliter" : filter.charAt(0).toLowerCase() + filter.slice(1)}

@@ -82,8 +82,8 @@ const SideBar = () => {
 
   return (
 
-    <div className="w-64 h-screen  bg-gray-300 p-5 font-meri">
-        <h1 className="text-3xl font-bold text-red ">React Store</h1>
+    <div className="w-64 min-h-screen shrink-0 bg-gray-300 p-5 font-meri">
+        <h1 className="text-3xl font-bold  ">React Store</h1>
        {/* search and set Min and Max */}
        <section className="mt-8">
         <input type="text"
